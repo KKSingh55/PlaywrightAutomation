@@ -78,8 +78,10 @@ test('@SecondWay Run Playwright test',async ({page}) =>
         console.log(await page.title());
         await page.locator("div[class='left mt-1'] p").textContent();
         console.log(await page.locator("div[class='left mt-1'] p").textContent());
-        
 
+        
+        
+    
             
     });
 
