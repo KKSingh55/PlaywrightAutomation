@@ -79,6 +79,9 @@ const product = page.locator(".card-body");
         await expect(page.locator(".tagline")).toHaveText(" Thank you for Shopping With Us ");
         await page.close();
         await context.close();
+        
+        await page.locator(".fa.fa-angle-right").click();
+        expect(page.locator(".fa.fa-angle-right")).toBeHidden();
 
 
 });

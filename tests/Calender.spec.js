@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.only("@Calender validation ",async ( {page} ) =>
+test("@Calender validation ",async ( {page} ) =>
 {
     
     const MonthNumber = "6";
@@ -24,13 +24,13 @@ test.only("@Calender validation ",async ( {page} ) =>
    
  });
 
- test("@Calender  validation Automation ",async ( {page} )  =>
+ test.only("@Calender  validation Automation ",async ( {page} )  =>
  {
     await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/offers');
     await page.locator('button').nth(2).click();
    await page.getByRole('button', { name: 'March 2025' }).click();
    await page.getByRole('button', { name: '2025', exact: true }).click();
-   await page.getByRole('button', { name: '2023' }).click();
+   await page.getByRole('button', { name: '2022' }).click();
    await page.getByRole('button', { name: 'November' }).click();
    await page.getByRole('button', { name: 'November 28,' }).click();
    
